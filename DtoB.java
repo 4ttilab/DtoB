@@ -6,12 +6,12 @@ public class DtoB {
 
     public static void main(String[] args) {
        
-        System.out.println("Adj meg egy pozitív egész számot:");
+        System.out.println("Type an integer below:");
         double dec = 0;
         try {
             dec = Double.parseDouble(new Scanner(System.in).nextLine());
         }catch (Exception e){
-            System.out.println("Nem a kérésnek megfelelő számot adtál meg!");
+            System.out.println("It is'nt an integer!");
         }
         double x = 0;
         double i = 0;
@@ -28,6 +28,6 @@ public class DtoB {
             }
             x = x/2;
         }
-        System.out.println(bin+" (bináris)");
+        System.out.println(bin+" (bin)");
     }
 }
